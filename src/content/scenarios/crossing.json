@@ -1,0 +1,47 @@
+{
+  "id": "sc_crossing",
+  "nameKey": "scenarios.crossing.name",
+  "briefKey": "scenarios.crossing.brief",
+  "introKey": "scenarios.crossing.intro",
+  "outroKey": "scenarios.crossing.outro",
+  "aiProfile": "standard",
+  "map": {
+    "width": 16,
+    "height": 11,
+    "rows": [
+      "mmpppppppppppmmm",
+      "mppphhppppcppppm",
+      "ppphhppppppppcpp",
+      "ppppppppphhppppp",
+      "pppppppppppppppp",
+      "wwwwbwwwwwwbwwww",
+      "pppppppppppppppp",
+      "pppcpppppppppppp",
+      "pppppppphhpppppp",
+      "mpppppphhppppppm",
+      "mmppppppppppppmm"
+    ]
+  },
+  "units": [
+    { "class": "infantry", "team": "player", "x": 3, "y": 8 },
+    { "class": "infantry", "team": "player", "x": 2, "y": 9 },
+    { "class": "recon", "team": "player", "x": 6, "y": 9 },
+    { "class": "armor", "team": "player", "x": 5, "y": 8 },
+    { "class": "artillery", "team": "player", "x": 4, "y": 10 },
+    { "class": "infantry", "team": "enemy", "x": 10, "y": 1 },
+    { "class": "infantry", "team": "enemy", "x": 5, "y": 3 },
+    { "class": "armor", "team": "enemy", "x": 7, "y": 2 },
+    { "class": "artillery", "team": "enemy", "x": 3, "y": 1 },
+    { "class": "recon", "team": "enemy", "x": 13, "y": 3 }
+  ],
+  "objectives": [
+    { "x": 10, "y": 1, "owner": "enemy" },
+    { "x": 13, "y": 2, "owner": "neutral" }
+  ],
+  "victory": { "captureAll": true, "annihilate": false },
+  "turnLimit": 18,
+  "deployment": [{ "x": 3, "y": 8 }, { "x": 2, "y": 9 }, { "x": 6, "y": 9 }, { "x": 5, "y": 8 }, { "x": 4, "y": 10 }],
+  "spawnPlayerFromCampaign": false,
+  "bonusUnits": [],
+  "rewards": { "prestige": 12, "perObjective": 4, "perRemainingTurn": 1 }
+}

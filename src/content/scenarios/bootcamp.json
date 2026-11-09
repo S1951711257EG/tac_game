@@ -1,0 +1,49 @@
+{
+  "id": "sc_bootcamp",
+  "nameKey": "scenarios.bootcamp.name",
+  "briefKey": "scenarios.bootcamp.brief",
+  "introKey": "scenarios.bootcamp.intro",
+  "outroKey": "scenarios.bootcamp.outro",
+  "aiProfile": "standard",
+  "map": {
+    "width": 12,
+    "height": 9,
+    "rows": [
+      "pppppppppppp",
+      "pphhpppppppp",
+      "pphhppppcppp",
+      "pppppppppppp",
+      "pppwwwwppppp",
+      "pppwwwwppppp",
+      "pppppppppppp",
+      "pppcpppphhpp",
+      "pppppppppppp"
+    ]
+  },
+  "units": [
+    { "class": "infantry", "team": "player", "x": 2, "y": 6 },
+    { "class": "infantry", "team": "player", "x": 1, "y": 7 },
+    { "class": "armor", "team": "player", "x": 2, "y": 8 },
+    { "class": "infantry", "team": "enemy", "x": 8, "y": 2 },
+    { "class": "recon", "team": "enemy", "x": 10, "y": 4 }
+  ],
+  "objectives": [
+    { "x": 8, "y": 2, "owner": "neutral" },
+    { "x": 3, "y": 7, "owner": "neutral" }
+  ],
+  "victory": { "captureAll": true, "annihilate": false },
+  "turnLimit": 12,
+  "deployment": [{ "x": 2, "y": 6 }, { "x": 1, "y": 7 }, { "x": 2, "y": 8 }],
+  "spawnPlayerFromCampaign": false,
+  "bonusUnits": [],
+  "rewards": { "prestige": 10, "perObjective": 3, "perRemainingTurn": 0 },
+  "tutorial": [
+    { "id": "welcome", "event": "start", "textKey": "tut.welcome" },
+    { "id": "select", "event": "unitSelected", "textKey": "tut.select", "highlightUnitIndex": 0 },
+    { "id": "move", "event": "unitMoved", "textKey": "tut.move" },
+    { "id": "attack", "event": "unitAttacked", "textKey": "tut.attack" },
+    { "id": "capture", "event": "objectiveCaptured", "textKey": "tut.capture" },
+    { "id": "end", "event": "turnEnded", "textKey": "tut.end" },
+    { "id": "won", "event": "battleWon", "textKey": "tut.won" }
+  ]
+}

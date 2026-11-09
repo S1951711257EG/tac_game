@@ -1,0 +1,24 @@
+[
+  {
+    "id": "standard",
+    "nameKey": "ai.standard.name",
+    "counterWeight": 0.8,
+    "killBonus": 6,
+    "objectiveScore": 40,
+    "terrainSafety": 0.6,
+    "standoff": { "min": 2, "max": 3 },
+    "standoffBonus": 3,
+    "aggression": 0.6
+  },
+  {
+    "id": "aggressive",
+    "nameKey": "ai.aggressive.name",
+    "counterWeight": 0.5,
+    "killBonus": 8,
+    "objectiveScore": 55,
+    "terrainSafety": 0.4,
+    "standoff": { "min": 2, "max": 3 },
+    "standoffBonus": 2,
+    "aggression": 0.9
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "plains",
+    "mapChar": "p",
+    "nameKey": "terrain.plains.name",
+    "descKey": "terrain.plains.desc",
+    "defense": 0,
+    "costs": { "infantry": 1, "recon": 1, "armor": 1, "artillery": 1 },
+    "capturable": false,
+    "themeRole": "terrain.plains"
+  },
+  {
+    "id": "forest",
+    "mapChar": "f",
+    "nameKey": "terrain.forest.name",
+    "descKey": "terrain.forest.desc",
+    "defense": 2,
+    "costs": { "infantry": 2, "recon": 3, "armor": 3, "artillery": 3 },
+    "capturable": false,
+    "themeRole": "terrain.forest"
+  },
+  {
+    "id": "hills",
+    "mapChar": "h",
+    "nameKey": "terrain.hills.name",
+    "descKey": "terrain.hills.desc",
+    "defense": 3,
+    "costs": { "infantry": 2, "recon": 2, "armor": 3, "artillery": 3 },
+    "capturable": false,
+    "themeRole": "terrain.hills"
+  },
+  {
+    "id": "mountains",
+    "mapChar": "m",
+    "nameKey": "terrain.mountains.name",
+    "descKey": "terrain.mountains.desc",
+    "defense": 4,
+    "costs": { "infantry": 4, "recon": null, "armor": null, "artillery": null },
+    "capturable": false,
+    "themeRole": "terrain.mountains"
+  },
+  {
+    "id": "city",
+    "mapChar": "c",
+    "nameKey": "terrain.city.name",
+    "descKey": "terrain.city.desc",
+    "defense": 3,
+    "costs": { "infantry": 1, "recon": 1, "armor": 1, "artillery": 1 },
+    "capturable": true,
+    "themeRole": "terrain.city"
+  },
+  {
+    "id": "bridge",
+    "mapChar": "b",
+    "nameKey": "terrain.bridge.name",
+    "descKey": "terrain.bridge.desc",
+    "defense": 0,
+    "costs": { "infantry": 1, "recon": 1, "armor": 1, "artillery": 1 },
+    "capturable": false,
+    "themeRole": "terrain.bridge"
+  },
+  {
+    "id": "water",
+    "mapChar": "w",
+    "nameKey": "terrain.water.name",
+    "descKey": "terrain.water.desc",
+    "defense": 0,
+    "costs": { "infantry": null, "recon": null, "armor": null, "artillery": null },
+    "capturable": false,
+    "themeRole": "terrain.water"
+  }
+]

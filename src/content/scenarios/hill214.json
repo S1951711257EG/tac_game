@@ -1,0 +1,45 @@
+{
+  "id": "sc_hill214",
+  "nameKey": "scenarios.hill214.name",
+  "briefKey": "scenarios.hill214.brief",
+  "introKey": "scenarios.hill214.intro",
+  "outroKey": "scenarios.hill214.outro",
+  "aiProfile": "standard",
+  "map": {
+    "width": 14,
+    "height": 11,
+    "rows": [
+      "mmmmmmmmmmmmmm",
+      "mmhhhchhhmmmmm",
+      "mmhhhhhhhhhhmm",
+      "mhhhhhhhhhhhmm",
+      "mmhhhhhhhhmmmm",
+      "mmmhhhhhhmmmmm",
+      "mmffhhchhffmmm",
+      "mmffffffffmmmm",
+      "mmffffpfffmmmm",
+      "mmmpppppppmmmm",
+      "mmmmppppmmmmmm"
+    ]
+  },
+  "units": [
+    { "class": "infantry", "team": "enemy", "x": 5, "y": 1 },
+    { "class": "infantry", "team": "enemy", "x": 4, "y": 2 },
+    { "class": "armor", "team": "enemy", "x": 7, "y": 2 },
+    { "class": "artillery", "team": "enemy", "x": 9, "y": 3 },
+    { "class": "recon", "team": "enemy", "x": 8, "y": 5 }
+  ],
+  "objectives": [
+    { "x": 5, "y": 1, "owner": "enemy" },
+    { "x": 6, "y": 6, "owner": "neutral" }
+  ],
+  "victory": { "captureAll": true, "annihilate": false },
+  "turnLimit": 16,
+  "deployment": [
+    { "x": 5, "y": 10 }, { "x": 6, "y": 10 }, { "x": 4, "y": 10 }, { "x": 7, "y": 10 },
+    { "x": 5, "y": 9 }, { "x": 6, "y": 9 }, { "x": 4, "y": 9 }, { "x": 7, "y": 9 }
+  ],
+  "spawnPlayerFromCampaign": true,
+  "bonusUnits": [],
+  "rewards": { "prestige": 14, "perObjective": 4, "perRemainingTurn": 1 }
+}

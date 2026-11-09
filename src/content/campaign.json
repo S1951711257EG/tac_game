@@ -1,0 +1,40 @@
+{
+  "id": "meridian",
+  "nameKey": "campaign.name",
+  "startPrestige": 12,
+  "maxForceSize": 8,
+  "economy": {
+    "repairCostPerHp": 1,
+    "trainingCost": 16,
+    "recruit": { "infantry": 8, "recon": 10, "artillery": 14, "armor": 16 }
+  },
+  "nodes": [
+    {
+      "id": "bootcamp",
+      "scenarioId": "sc_bootcamp",
+      "next": ["crossing"],
+      "entry": true,
+      "tutorial": true
+    },
+    {
+      "id": "crossing",
+      "scenarioId": "sc_crossing",
+      "next": ["hill214", "rustfields"]
+    },
+    {
+      "id": "hill214",
+      "scenarioId": "sc_hill214",
+      "next": ["gate"]
+    },
+    {
+      "id": "rustfields",
+      "scenarioId": "sc_rustfields",
+      "next": ["gate"]
+    },
+    {
+      "id": "gate",
+      "scenarioId": "sc_velmora_gate",
+      "next": []
+    }
+  ]
+}

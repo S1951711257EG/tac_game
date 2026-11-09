@@ -1,0 +1,47 @@
+{
+  "id": "sc_rustfields",
+  "nameKey": "scenarios.rustfields.name",
+  "briefKey": "scenarios.rustfields.brief",
+  "introKey": "scenarios.rustfields.intro",
+  "outroKey": "scenarios.rustfields.outro",
+  "aiProfile": "aggressive",
+  "map": {
+    "width": 16,
+    "height": 11,
+    "rows": [
+      "pppppffppppppppp",
+      "ppppffppppcppppp",
+      "pppppppppppppffp",
+      "ppcppppppppppffp",
+      "pppppppppppppppp",
+      "ffpppppppppppppf",
+      "ffpppppphhpppppp",
+      "pppppppphhpppppp",
+      "pppppppppppppppp",
+      "ppppfppppppcpppp",
+      "ppppfppppppppppp"
+    ]
+  },
+  "units": [
+    { "class": "armor", "team": "enemy", "x": 9, "y": 1 },
+    { "class": "armor", "team": "enemy", "x": 3, "y": 2 },
+    { "class": "infantry", "team": "enemy", "x": 10, "y": 1 },
+    { "class": "infantry", "team": "enemy", "x": 3, "y": 4 },
+    { "class": "recon", "team": "enemy", "x": 13, "y": 4 },
+    { "class": "artillery", "team": "enemy", "x": 11, "y": 2 }
+  ],
+  "objectives": [
+    { "x": 10, "y": 1, "owner": "enemy" },
+    { "x": 2, "y": 3, "owner": "neutral" },
+    { "x": 11, "y": 9, "owner": "neutral" }
+  ],
+  "victory": { "captureAll": true, "annihilate": false },
+  "turnLimit": 16,
+  "deployment": [
+    { "x": 6, "y": 10 }, { "x": 7, "y": 10 }, { "x": 5, "y": 10 }, { "x": 8, "y": 10 },
+    { "x": 6, "y": 9 }, { "x": 9, "y": 10 }, { "x": 4, "y": 10 }, { "x": 3, "y": 10 }
+  ],
+  "spawnPlayerFromCampaign": true,
+  "bonusUnits": [],
+  "rewards": { "prestige": 14, "perObjective": 4, "perRemainingTurn": 1 }
+}

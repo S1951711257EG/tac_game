@@ -1,0 +1,49 @@
+{
+  "id": "sc_velmora_gate",
+  "nameKey": "scenarios.gate.name",
+  "briefKey": "scenarios.gate.brief",
+  "introKey": "scenarios.gate.intro",
+  "outroKey": "scenarios.gate.outro",
+  "aiProfile": "aggressive",
+  "map": {
+    "width": 16,
+    "height": 12,
+    "rows": [
+      "mmppppppppppppmm",
+      "mppccppppppccppm",
+      "pppccppppppccppp",
+      "pppppppphhpppppp",
+      "pppppphhhhhhpppp",
+      "ppppphhhhhhhhppp",
+      "pppppphhhhhhpppp",
+      "pppwwpppppppwwpp",
+      "pppwwpppppppwwpp",
+      "pppppppppppppppp",
+      "mppccppppppppppm",
+      "mmppppppppppppmm"
+    ]
+  },
+  "units": [
+    { "class": "infantry", "team": "enemy", "x": 3, "y": 1 },
+    { "class": "infantry", "team": "enemy", "x": 4, "y": 2 },
+    { "class": "armor", "team": "enemy", "x": 11, "y": 2 },
+    { "class": "artillery", "team": "enemy", "x": 12, "y": 1 },
+    { "class": "recon", "team": "enemy", "x": 8, "y": 3 },
+    { "class": "infantry", "team": "enemy", "x": 12, "y": 4 }
+  ],
+  "objectives": [
+    { "x": 3, "y": 1, "owner": "enemy" },
+    { "x": 11, "y": 1, "owner": "enemy" },
+    { "x": 3, "y": 10, "owner": "player" },
+    { "x": 4, "y": 10, "owner": "player" }
+  ],
+  "victory": { "captureAll": true, "annihilate": false },
+  "turnLimit": 20,
+  "deployment": [
+    { "x": 5, "y": 10 }, { "x": 6, "y": 10 }, { "x": 7, "y": 10 }, { "x": 8, "y": 10 },
+    { "x": 5, "y": 9 }, { "x": 6, "y": 9 }, { "x": 7, "y": 9 }, { "x": 2, "y": 9 }
+  ],
+  "spawnPlayerFromCampaign": true,
+  "bonusUnits": [],
+  "rewards": { "prestige": 20, "perObjective": 5, "perRemainingTurn": 1 }
+}

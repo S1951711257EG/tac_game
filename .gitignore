@@ -1,2 +1,33 @@
-skills/
+# dependencies & build
 node_modules/
+.next/
+out/
+dev.log
+server.log
+
+# env & local
+.env*
+*.local
+
+# prisma (unused by the game; scaffold default)
+db/custom.db
+prisma/dev.db
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+pnpm-debug.log*
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# sandbox infrastructure (not part of the game)
+.zscripts/
+skills/
+examples/
+download/
+upload/
+agent-ctx/
+Caddyfile
+mini-services/
